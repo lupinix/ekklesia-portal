@@ -481,6 +481,10 @@ class PropositionsCell(LayoutCell):
         else:
             return None
 
+    def export_csv_url(self):
+        breakpoint()
+        return self.self_link + "&media_type=text/csv"
+
 
 @App.cell(Propositions, 'new_draft')
 class PropositionNewDraftCell(NewFormCell):
